@@ -499,7 +499,6 @@ union ethtool_flow_union {
 	struct ethtool_ah_espip4_spec		ah_ip4_spec;
 	struct ethtool_ah_espip4_spec		esp_ip4_spec;
 	struct ethtool_usrip4_spec		usr_ip4_spec;
-	struct ethhdr				ether_spec;
 	__u8					hdata[52];
 };
 
@@ -654,7 +653,6 @@ struct ethtool_rx_ntuple_flow_spec {
 		struct ethtool_ah_espip4_spec		ah_ip4_spec;
 		struct ethtool_ah_espip4_spec		esp_ip4_spec;
 		struct ethtool_usrip4_spec		usr_ip4_spec;
-		struct ethhdr				ether_spec;
 		__u8					hdata[72];
 	} h_u, m_u;
 
